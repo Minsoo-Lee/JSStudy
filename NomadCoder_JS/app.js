@@ -1,21 +1,29 @@
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sat = "sat";
-const sun = "sun";
+const playerName = "nico";
+const playerPoint = 121212;
+const playerHandsome = false;
+const playerFat = "little bit";
 
-const daysOfWeek = [mon, tue, wed, thu, fri, sat, sun];
-const daysOfWeekString = ["mon", "tue", "wed", "thu", "fri", "sat"];
+// playerArray[0] == name
+// playerArray[1] == points
+// ...
+const playerArray = ["minsoo", 1212, false, "little bit"];
 
-const nonsense = [1, 2, "hello", false, null, true, undefined, "nico"]
+const player = {
+    name: "minsoo",
+    points: 10,
+    handsome: false,
+    fat: "little bit"
+}
 
-console.log(daysOfWeek, nonsense, daysOfWeekString);
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
 
-// Get Item from Array
-console.log(daysOfWeekString[4]);
+player.handsome = true;
+console.log(player);
 
-// Add one more day to the array
-daysOfWeekString.push("sun");
-console.log(daysOfWeekString);
+player.lastName = "potato";
+console.log(player);
+
+player.points = player.points + 15;
+console.log(player.points);
