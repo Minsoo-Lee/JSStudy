@@ -1,23 +1,7 @@
-const calculator = {
-    add: function(a, b) {
-        console.log(a + b);
-    },
-    minus: function(a, b) {
-        console.log(a - b);
-    },
-    div: function(a, b) {
-        console.log(a / b);
-    },
-    multi: function(a, b) {
-        console.log(a * b);
-    },
-    powerof: function(a, b) {
-        console.log(a ** b);
-    }
+const age = 96;
+function calculateKrAge(ageOfForeigner) {
+    return ageOfForeigner + 2;
 };
 
-calculator.add(4, 2);
-calculator.minus(4, 2);
-calculator.div(4, 2);
-calculator.multi(4, 2);
-calculator.powerof(4, 2);
+const krAge = calculateKrAge(age);
+console.log(krAge);
