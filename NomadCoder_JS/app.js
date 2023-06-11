@@ -1,7 +1,9 @@
-const age1 = prompt("How old are you?");
+const age = parseInt(prompt("How old are you?"));
 
-console.log(age1, parseInt(age1));
+console.log(isNaN(age));
 
-const age2 = parseInt(prompt("How old are you?"));
-
-console.log(age2);
+if (isNaN(age)) {
+    console.log("Please write a number");
+} else {
+    console.log("Thank you for writing your age.");
+}
