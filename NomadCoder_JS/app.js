@@ -1,15 +1,20 @@
-const age = parseInt(prompt("How old are you?"));
+const title = document.getElementById("title");
+title.innerText = "Got you!";
 
-if (isNaN(age) || age < 0) {
-    console.log("Please write a real positive number");
-} else if (age < 18) {
-    console.log("You are too young.");
-} else if (age >= 18 && age <= 50) {
-    console.log("You can drink")
-} else if (age > 50 && age <= 80) {
-    console.log("You should exercise");
-} else if (age === 100) {
-    console.log("wow you are wise")
-} else if (age > 80) {
-    console.log("You can do whatever you want");
-}
+console.log(title.id);
+console.log(title.className);
+
+// const title2 = document.getElementById("hello");
+// title2.innerText = "Got you!";
+
+const hellos = document.getElementsByClassName("hello");
+console.log(hellos);
+
+const title3 = document.getElementsByTagName("h1");
+console.log(title3);
+
+const title4 = document.querySelector(".hello1 h2");
+console.log(title4);
+
+const title5 = document.querySelectorAll(".hello1 h2");
+console.log(title5);
